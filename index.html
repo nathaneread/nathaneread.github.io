@@ -10,7 +10,7 @@
         <script>
             function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("main").style.marginLeft = "0px";
         }
             function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
@@ -20,12 +20,10 @@
     </head>
     <body>
         <header>
-            <a href="https://uk.linkedin.com/in/nathan-read-02997a80" target="_blank">
-                <i class="fab fa-linkedin" style="color: white;"></i></a>
-            <a href="https://github.com/nathaneread" target="_blank">
-                <i class="fab fa-github-square" style="color: white;"></i></a>
-            <a href="mailto:nathan_read@outlook.com>">
-                <i class="fas fa-envelope" style="color: white;"></i></a>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+            
         </header>
         <div id="mySidebar" class="sidebar">
                 <a href="javascript: void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -35,7 +33,12 @@
                 <a href="#">Contact</a>
         </div>
         <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>`
+            <a href="https://uk.linkedin.com/in/nathan-read-02997a80" target="_blank">
+                <i class="fab fa-linkedin" style="color: white;"></i></a>
+            <a href="https://github.com/nathaneread" target="_blank">
+                <i class="fab fa-github-square" style="color: white;"></i></a>
+            <a href="mailto:nathan_read@outlook.com>">
+                <i class="fas fa-envelope" style="color: white;"></i></a>
         </div>
             <div id="intro">
                 <h2>Hi, my name is_</h2>
