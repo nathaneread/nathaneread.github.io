@@ -31,19 +31,6 @@ header i {
     font-size: 32px;
     padding: 2rem;
 }
-
-nav {
-    grid-area: nav;
-    color: white;
-    padding: 2rem;
-    margin-left: 400px;
-}
-nav ul li {
-    list-style-type: none;
-    display: inline;
-    padding: 1rem;
-    font-size: 16px;
-}
 a:link {
     color: white;
     text-decoration: none;
@@ -73,14 +60,6 @@ a:hover {
     width: 40rem;
     position: relative;
 }
-/* #intro img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-} */
 #amtitle {
     position: absolute;
     color: white;
@@ -122,6 +101,62 @@ a:hover {
     grid-area: contact;
     background-color: #cfcfcf;
 }
+
+.sidebar {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #FFF; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #131d36;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    margin-left: 875px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #131d36;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #131d36;
+  }
+  
+  #main {
+    padding: 20px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
 
 footer {
     grid-area: footer;
