@@ -55,8 +55,6 @@ a:visited {
 a:hover {
     color: #03fcec;
 }
-
-
 #intro {
     grid-area: intro;
     grid-column: 1 / span 2;
